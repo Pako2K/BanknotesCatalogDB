@@ -1,0 +1,5 @@
+1;Co-administrated Territory;cT;Territory administrated by UN or several countries;
+2;Economic Union;EU;Political and/or economical union of independent states;2
+3;Independent State;Ind;Independent state recognized by UN;1
+4;Not Recognized State;NR;Independent state not recognized by all the countries in UN;3
+5;Territory;T;Non idependent territory with a political and economic relation to an independent state;4
