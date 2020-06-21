@@ -20,7 +20,6 @@
 20;6;3;BY;BLR;Belarus;Republic of Belarus;1990;;;;
 21;6;3;BE;BEL;Belgium;Kingdom of Belgium;1830;;;;
 22;2;3;BZ;BLZ;Belize;Belize;1981;;;;
-23;4;3;BJ;BEN;Benin;Republic of Benin;1960;;;;
 24;2;5;BM;BMU;Bermuda;Islands of Bermuda;1612;;224;;
 25;5;3;BT;BTN;Bhutan;Kingdom of Bhutan;1910;;;;
 26;3;3;BO;BOL;Bolivia;Republic of Bolivia;1825;;;;
@@ -46,10 +45,8 @@
 47;3;3;CO;COL;Colombia;Republic of Colombia;1810;;;;
 48;4;3;KM;COM;Comoros;Federal Islamic Republic of the Comoros;1975;;;;
 49;4;3;CG;COG;Congo, Republic;Republic of the Congo;1960;;;;Also known as Congo-Brazzaville to avoid the confusion with the neighbouring country
-50;4;3;;;Congo-Kinshasa;Democratic Republic of the Congo;1960;1971;;285;Between 1960 and 1964 the official name of the country was Republic of the Congo. Therfore to avoid confusion with the neighbouring country it was also known as Congo-Kinshasa 
 51;7;5;CK;COK;Cook Islands;Cook Islands;1965;;152;;
 52;2;3;CR;CRI;Costa Rica;Republic of Costa Rica;1821;;;;
-53;4;3;CI;CIV;Côte dNULLIvoire;Republic of Côte dNULLIvoire;1960;;;;
 54;6;3;HR;HRV;Croatia;Republic of Croatia;1991;;;;
 55;2;3;CU;CUB;Cuba;Republic of Cuba;1902;;;;
 56;6;3;CY;CYP;Cyprus;Republic of Cyprus;1960;;;;
@@ -77,9 +74,10 @@
 79;4;3;GM;GMB;Gambia;Republic of The Gambia;1965;;;;
 80;5;3;GE;GEO;Georgia;Georgia;1991;;;;
 81;6;3;DE;DEU;Germany;Federal Republic of Germany;1871;;;;
-82;4;3;GH;GHA;Ghana;Republic of Ghana;1957;;;;
 83;6;5;GI;GIB;Gibraltar;Gibraltar;1713;;224;;
 84;6;3;GR;GRC;Greece;Hellenic Republic;1830;;;;
+82;4;3;GH;GHA;Ghana;Republic of Ghana;1957;;;;"Dominion of  Ghana within the Commonwealth of Nations: 1957–1960
+Republic established in 1960 "
 85;2;5;GL;GRL;Greenland;Greenland;1979;;58;;
 86;2;3;GD;GRD;Grenada;Grenada;1974;;;;
 87;2;5;GP;GLP;Guadeloupe;Overseas department of Guadelope;2007;;74;;
@@ -252,14 +250,12 @@
 272;7;5;NH;NHB;New Hebrides;New Hebrides Condominium;1906;1980;74;229;
 273;7;5;PC;PCI;Pacific Islands, Trust Territory;Trust Territory of the Pacific Islands;1947;1994;225;132,138,159,163;
 274;2;5;PZ;PCZ;Panama Canal Zone;Panama Canal Zone;1903;1979;225;165;
-275;6;3;CS;CSG;Serbia and Montenegro;State Union of Serbia and Montenegro;2003;2006;;250,248;
 276;5;3;SK;SKM;Sikkim;Sikkim;1948;1975;;100;
 277;4;5;RH;RHO;Southern Rhodesia;Colony of Southern Rhodesia;1979;1980;224;238;
 279;4;3;HV;HVO;Upper Volta;Republic of Upper Volta;1958;1984;;34;
 280;6;3;SU;SUN;Soviet Union;Union of Soviet Socialist Republics;1922;1991;;177;
 281;5;3;VD;VDR;Vietnam, North;Democratic Republic of Vietnam;1945;1976;;231;
 283;5;3;YD;YMD;Yemen, Democratic Rep.;PeopleNULLs Democratic Republic of Yemen;1967;1990;;236;
-284;6;3;YU;YUG;Yugoslavia;Federal Republic of Yugoslavia;1918;2003;;275;
 285;4;3;ZR;ZAR;Zaire;Republic of Zaire;1971;1997;;288;
 286;7;5;GE;GEL;Gilbert and Ellice Islands;Gilbert and Ellice Islands;1892;1976;224;112,220;
 288;4;3;CD;COD;Congo, Democratic Republic;Democratic Republic of the Congo;1997;;;;
@@ -288,7 +284,6 @@
 311;5;2;;;Qatar and Dubai;Qatar-Dubai Currency Agreement;1966;1973;;;
 313;4;4;;;South Kasai;South Kasai;1960;1962;50;50;
 314;4;4;;;Congo-Stanleyville;Free Republic of the Congo;1960;1962;50;50;
-315;4;5;;;Belgian Congo;Belgian Congo;1908;1960;21;50;
 316;4;3;;;Congo Free State;Congo Free State;1885;1908;;315;
 317;6;3;;;Danzig;Free City of Danzig;1920;1939;;81;
 318;5;5;;;Ceylon;British Ceylon;1815;1948;224;200;
@@ -304,6 +299,7 @@
 328;2;5;;;British Honduras;British Honduras;1862;1973;224;327;
 32;5;3;BN;BRN;Brunei;Nation of Brunei, the Abode of Peace;1984;;;;Brunei gained its independence from the United Kingdom on 1 January 1984
 329;5;5;;;Brunei;British protectorate of Brunei;1888;1984;224;32;
+315;4;5;;;Belgian Congo;Belgian Congo;1908;1960;21;50,314,310,313;
 128;5;3;MY;MYS;Malaysia;Malaysian Federation;1963;;;;Malaysia was created when Malaya united with North Borneo, Sarawak, and Singapore on 16 September 1963. In 1965, Singapore became an independent country.
 129;5;3;MV;MDV;Maldives;Republic of Maldives;1965;;;;
 330;5;3;;;Malaya;Federation of Malaya;1957;1963;;128;The Federation became independent on 31 August 1957, and in 1963, Malaysia was formed when the federation united with the colonies of Singapore, North Borneo, and Sarawak.
@@ -313,3 +309,38 @@
 334;5;5;;;Singapore;Colony of Singapore;1946;1963;224;128;The Colony of Singapore was a British Crown colony that existed from 1946 until 1963. In 1946, the Straits Settlements were dissolved and Singapore together with the Cocos-Keeling and Christmas Island became a separate Crown colony. The colony was governed by the United Kingdom until it gained partial internal self-governance in 1955. The Crown colony was dissolved on 16 September 1963 when Singapore became a state of Malaysia. On 9 August 1965, Singapore officially left Malaysia to become the independent Republic of Singapore
 335;5;2;;;Malaya and British Borneo;Malaya and British Borneo;1953;1967;;;"The Malaya and British Borneo dollar was the currency of Malaya, Singapore, Sarawak, North Borneo, Brunei and Riau archipelago from 1953 to 1967 and was the successor of the Malayan dollar and Sarawak dollar, replacing them at par. The currency was issued by the Board of Commissioners of Currency, Malaya and British Borneo. Prior to 1952, the board was known as the Board of Commissioners of Currency, Malaya. 
 The Malaya and British Borneo dollar was used in Malaya after independence in 1957, and in Malaysia after its formation in 1963, as well as in Singapore after its independence in 1965. After 1967, the two countries and Brunei ended the common currency arrangement and began issuing their own currencies. However, the Malaya and British Borneo dollar continued to be legal tender until 16 January 1969. The currency was also being used in the Riau Archipelago in Indonesia prior to 1963. "
+336;5;5;;;Portuguese India;State of India;1505;1961;172;100;
+337;5;4;;;Dadra and Nagar Haveli;Free Dadra and Nagar Haveli;1954;1961;172;100;
+338;5;5;;;Dutch East Indies;Dutch East Indies;1800;1949;149;101;
+339;5;5;;;Netherlands New Guinea;Netherlands New Guinea;1949;1962;149;101;
+340;5;4;;;Iranian Azerbaijan;Azerbaijan People's Government;1945;1946;102;102;
+341;4;5;;;French Somaliland;French Somaliland;1883;1967;74;342;
+342;4;5;;;Afars and the Issas;French Territory of the Afars and the Issas;1967;1977;74;59;
+343;4;5;;;French Equatorial Africa;French Equatorial Africa;1910;1958;74;41,42,49,78;In September 1958 the federation was dissolved. In 1959 the new republics formed an interim association called the Union of Central African Republics, before becoming fully independent in August 1960. 
+23;4;3;BJ;BEN;Benin;Republic of Benin;1960;;;;"Between 1958 and 1975 its official name was 
+Republic of Dahomey"
+53;4;3;CI;CIV;Côte d'Ivoire;Republic of Côte d'Ivoire;1960;;;;
+344;4;5;;;French West Africa;French West Africa;1895;1958;74;21,34,53,90,130,134,154,188;
+345;4;2;;;British West Africa;British West Africa;1907;1962;224;;
+346;4;5;;;Gambia Colony;Gambia Colony and Protectorate;1821;1965;224;79;
+347;4;5;;;Sierra Leone Colony;Sierra Leone Colony and Protectorate;1808;1961;224;190;
+349;4;5;;;Nigeria, Northern ;Northern Nigeria Protectorate;1900;1914;224;348;
+350;4;5;;;Nigeria, Southern ;Southern Nigeria Protectorate;1900;1914;224;348;
+351;4;5;;;Gold Coast;Colony of the Gold Coast;1821;1957;224;82;
+348;4;5;;;Nigeria, Federation;Federation of Nigeria;1914;1960;224;155;"Colony and Protectorate of Nigeria
+(1914–1954)
+Federation of Nigeria (1954-1960)"
+352;4;5;;;British East Africa;East Africa Protectorate;1895;1920;224;353;
+353;4;5;;;Kenya Colony;Colony and Protectorate of Kenya;1920;1963;224;111;
+50;4;3;;;Congo-Kinshasa;Democratic Republic of the Congo;1960;1971;;285;Between 1960 and 1964 the official name of the country was Republic of the Congo. Therefore, to avoid confusion with the neighboring country with the same name, it was also known as Congo-Kinshasa 
+275;6;3;CS;CSG;Serbia and Montenegro;State Union of Serbia and Montenegro;2003;2006;;250,248;"After the disolution of the Socialist Federal Republic of Yugoslavia after its breakup in 1992, the republics of Montenegro and Serbia formed a reduced federative state, known officially until 2003 as the </b>Federal Republic of Yugoslavia</b>.
+On 4 February 2003, the federal assembly of Yugoslavia created a loose state union or confederacy: <b>The State Union of Serbia and Montenegro</b>, although Yugoslavia was still commonly used.
+On 21 May 2006, an independence referendum was held in Montenegro, in which 55.5% of voters voted in favor of independence. Montenegro's declaration of independence was held on 3 June 2006, and Serbia's formal declaration of independence on 5 June.<br>
+The Serbian Republic continued using the Yugoslav Dinar, renaming it in 2003 as the Serbian Dinar. <br>
+Montenegro adopted the Deutsch Mark in 1999, in parallel with the Yugoslav dinar until 2000, and continued to use it until the mark fell into disuse to be replaced by the Euro in 2002."
+284;6;3;YU;YUG;Yugoslavia;Socialist Federal Republic of Yugoslavia;1918;1992;;193,54,125,27,275;"Yugoslavia was founded in 1918 under the name of the <b>Kingdom of Serbs, Croats and Slovenes</b> by the merger of the provisional State of Slovenes, Croats and Serbs 
+with the Kingdom of Serbia. The kingdom gained international recognition on 13 July 1922 at the Conference of Ambassadors in Paris. 
+The official name of the state was changed to <b>Kingdom of Yugoslavia</b> on 3 October 1929.
+Yugoslavia was invaded by the Axis powers on 6 April 1941. In 1943, a Democratic Federal Yugoslavia was proclaimed by the Partisan resistance. The monarchy was abolished in November 1945.
+Yugoslavia was renamed the <b>Federal People's Republic of Yugoslavia</b> in 1946, when a communist government was established. It acquired the territories of Istria, Rijeka, and Zadar from Italy. In 1963, the country was renamed again, as the <b>Socialist Federal Republic of Yugoslavia</b>.
+In 1992 Yugoslavia broke up along its republics' borders into five countries. The republics of Montenegro and Serbia formed a reduced federative state, known officially until 2003 as the </b>Federal Republic of Yugoslavia</b>."
