@@ -434,6 +434,14 @@ ALTER TABLE ONLY public.ban_banknote
     ADD CONSTRAINT ban_banknote_pkey PRIMARY KEY (ban_id);
 
 
+-- Name: ban_banknote UNQ_KEY_BANKNOTE; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.ban_banknote
+    ADD CONSTRAINT "UNQ_KEY_BANKNOTE" UNIQUE (ban_ser_id, ban_cus_id, ban_face_value);
+
+
+
 --
 -- TOC entry 2801 (class 2606 OID 16718)
 -- Name: bit_item bit_item_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
