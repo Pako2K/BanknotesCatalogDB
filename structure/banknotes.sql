@@ -215,6 +215,7 @@ CREATE TABLE public.cur_currency (
     cur_id integer NOT NULL,
     cur_symbol text,
     cur_name text NOT NULL,
+	cur_name_plural text
     cur_full_name text,
     cur_start text,
     cur_end text,
@@ -289,7 +290,8 @@ ALTER TABLE public.gra_grade OWNER TO postgres;
 
 CREATE TABLE public.iss_issuer (
     iss_id integer NOT NULL,
-    iss_name text NOT NULL
+    iss_name text NOT NULL,
+    iss_description text
 );
 
 
@@ -301,7 +303,8 @@ ALTER TABLE public.iss_issuer OWNER TO postgres;
 
 CREATE TABLE public.mat_material (
     mat_id integer NOT NULL,
-    mat_material text NOT NULL
+    mat_name text NOT NULL,
+    mat_description text
 );
 
 
@@ -314,7 +317,8 @@ ALTER TABLE public.mat_material OWNER TO postgres;
 CREATE TABLE public.pri_printer (
     pri_id integer NOT NULL,
     pri_name text NOT NULL,
-    pri_location text
+    pri_location text,
+    pri_description text
 );
 
 
@@ -780,6 +784,27 @@ GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.cus_currency_unit TO "AppAPI";
 --
 
 GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.gra_grade TO "AppAPI";
+
+
+--
+-- Name: TABLE iss_issuer; Type: ACL; Schema: public; Owner: postgres
+--
+
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.iss_issuer TO "AppAPI";
+
+
+--
+-- Name: TABLE mat_material; Type: ACL; Schema: public; Owner: postgres
+--
+
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.mat_material TO "AppAPI";
+
+
+--
+-- Name: TABLE pri_printer; Type: ACL; Schema: public; Owner: postgres
+--
+
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.pri_printer TO "AppAPI";
 
 
 --
