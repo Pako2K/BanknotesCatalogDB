@@ -250,6 +250,7 @@ CREATE TABLE public.cus_currency_unit (
     cus_cur_id integer,
     cus_value real NOT NULL,
     cus_name text NOT NULL,
+    cus_name_plural text,
     cus_abbreviation text
 );
 

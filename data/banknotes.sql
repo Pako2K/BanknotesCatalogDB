@@ -437,9 +437,9 @@ INSERT INTO public.cur_currency (cur_id, cur_symbol, cur_name, cur_full_name, cu
 -- Data for Name: cus_currency_unit; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public.cus_currency_unit (cus_id, cus_cur_id, cus_value, cus_name, cus_abbreviation) VALUES (0, NULL, 0, '', NULL);
-INSERT INTO public.cus_currency_unit (cus_id, cus_cur_id, cus_value, cus_name, cus_abbreviation) VALUES (1, 74, 100, 'Cent', 'c');
-INSERT INTO public.cus_currency_unit (cus_id, cus_cur_id, cus_value, cus_name, cus_abbreviation) VALUES (2, 72, 100, 'Centimo', 'cts');
+INSERT INTO public.cus_currency_unit (cus_id, cus_cur_id, cus_value, cus_name, cus_abbreviation, cus_name_plural) VALUES (0, NULL, 0, '', NULL, NULL);
+INSERT INTO public.cus_currency_unit (cus_id, cus_cur_id, cus_value, cus_name, cus_abbreviation, cus_name_plural) VALUES (1, 74, 100, 'Cent', 'c', 'Cents');
+INSERT INTO public.cus_currency_unit (cus_id, cus_cur_id, cus_value, cus_name, cus_abbreviation, cus_name_plural) VALUES (2, 72, 100, 'Centimo', 'cts', 'Centimos');
 
 
 --
