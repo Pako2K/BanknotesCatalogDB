@@ -298,7 +298,8 @@ ALTER TABLE public.gra_grade OWNER TO postgres;
 CREATE TABLE public.iss_issuer (
     iss_id integer NOT NULL,
     iss_name text NOT NULL,
-    iss_description text
+    iss_description text,
+    iss_ter_id integer
 );
 
 
@@ -666,6 +667,13 @@ ALTER TABLE ONLY public.usr_user
 
 ALTER TABLE ONLY public.usr_user
     ADD CONSTRAINT usr_user_usr_name_key UNIQUE (usr_name);
+
+
+--
+-- Name: fki_FK_TER_ID; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE INDEX "fki_FK_TER_ID" ON public.iss_issuer USING btree (iss_ter_id);
 
 
 --
