@@ -383,7 +383,7 @@ CREATE TABLE public.ser_series (
     ser_name text NOT NULL,
     ser_start integer NOT NULL,
     ser_end integer,
-    ser_iss_id integer,
+    ser_iss_id integer NOT NULL,
     ser_law_date text,
     ser_description text
 );
@@ -415,7 +415,8 @@ CREATE TABLE public.tec_territory_currency (
     tec_iso3 text,
     tec_cur_type text NOT NULL,
     tec_start text,
-    tec_end text
+    tec_end text,
+    tec_is_issuer integer NOT NULL
 );
 
 
@@ -673,6 +674,14 @@ ALTER TABLE ONLY public.usr_user
 
 ALTER TABLE ONLY public.ter_territory
     ADD CONSTRAINT "FK_CON_ID" FOREIGN KEY (ter_con_id) REFERENCES public.con_continent(con_id);
+
+
+--
+-- Name: iss_issuer FK_TER_ID; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.iss_issuer
+    ADD CONSTRAINT "FK_TER_ID" FOREIGN KEY (iss_ter_id) REFERENCES public.ter_territory(ter_id);
 
 
 --
