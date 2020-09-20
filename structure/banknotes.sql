@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 12.2
+-- Dumped from database version 12.4 (Ubuntu 12.4-1.pgdg16.04+1)
 -- Dumped by pg_dump version 12.2
 
 SET statement_timeout = 0;
@@ -21,7 +21,7 @@ DROP DATABASE banknotes;
 -- Name: banknotes; Type: DATABASE; Schema: -; Owner: postgres
 --
 
-CREATE DATABASE banknotes WITH TEMPLATE = template0 ENCODING = 'UTF8' LC_COLLATE = 'English_United States.1252' LC_CTYPE = 'English_United States.1252';
+CREATE DATABASE banknotes WITH TEMPLATE = template0 ENCODING = 'UTF8' LC_COLLATE = 'en_US.UTF-8' LC_CTYPE = 'en_US.UTF-8';
 
 
 ALTER DATABASE banknotes OWNER TO postgres;
@@ -150,7 +150,7 @@ CREATE TABLE public.bva_variant (
     bva_issue_year integer NOT NULL,
     bva_printed_date text,
     bva_cat_id text NOT NULL,
-    bva_overstamped_id text,
+    bva_overstamped_id integer,
     bva_not_issued integer DEFAULT 0 NOT NULL,
     bva_pri_id integer,
     bva_obverse_color text,
@@ -386,7 +386,8 @@ CREATE TABLE public.ser_series (
     ser_end integer,
     ser_iss_id integer NOT NULL,
     ser_law_date text,
-    ser_description text
+    ser_description text,
+    ser_is_overstamped integer
 );
 
 
@@ -630,6 +631,14 @@ ALTER TABLE ONLY public.ser_series
 
 
 --
+-- Name: ser_series ser_series_ukey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.ser_series
+    ADD CONSTRAINT ser_series_ukey UNIQUE (ser_cur_id, ser_name);
+
+
+--
 -- Name: tec_territory_currency tec_territory_currency_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -674,6 +683,13 @@ ALTER TABLE ONLY public.usr_user
 --
 
 CREATE INDEX "fki_FK_TER_ID" ON public.iss_issuer USING btree (iss_ter_id);
+
+
+--
+-- Name: fki_bva_variant_bva_overstamped_id_fkey; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE INDEX fki_bva_variant_bva_overstamped_id_fkey ON public.bva_variant USING btree (bva_overstamped_id);
 
 
 --
@@ -746,6 +762,14 @@ ALTER TABLE ONLY public.bta_banknote_tag
 
 ALTER TABLE ONLY public.bva_variant
     ADD CONSTRAINT bva_variant_bva_ban_id_fkey FOREIGN KEY (bva_ban_id) REFERENCES public.ban_banknote(ban_id);
+
+
+--
+-- Name: bva_variant bva_variant_bva_overstamped_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.bva_variant
+    ADD CONSTRAINT bva_variant_bva_overstamped_id_fkey FOREIGN KEY (bva_overstamped_id) REFERENCES public.bva_variant(bva_id);
 
 
 --
