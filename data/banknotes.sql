@@ -2791,7 +2791,6 @@ SELECT pg_catalog.setval('public.mat_material_mat_id_seq', 3, false);
 -- Name: pri_printer_pri_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.pri_printer_pri_id_seq', 27, true);
 SELECT pg_catalog.setval('public.pri_printer_pri_id_seq', 28, true);
 
 
