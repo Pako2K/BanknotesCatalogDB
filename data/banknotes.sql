@@ -3233,4 +3233,3 @@ SELECT pg_catalog.setval('public.tty_territory_type_tty_id_seq', 359, false);
 --
 
 SELECT pg_catalog.setval('public.usr_user_usr_id_seq', 27, true);
-
