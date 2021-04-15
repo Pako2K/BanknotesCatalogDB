@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 12.5 (Ubuntu 12.5-1.pgdg16.04+1)
+-- Dumped from database version 12.5
 -- Dumped by pg_dump version 12.2
 
 SET statement_timeout = 0;
@@ -221,7 +221,7 @@ CREATE TABLE public.cur_currency (
     cur_id integer NOT NULL,
     cur_symbol text,
     cur_name text NOT NULL,
-	cur_name_plural text,
+    cur_name_plural text,
     cur_full_name text,
     cur_start text NOT NULL,
     cur_end text,
@@ -852,118 +852,124 @@ ALTER TABLE ONLY public.tec_territory_currency
 
 
 --
--- Name: TABLE ban_banknote; Type: ACL; Schema: public; Owner: postgres
+-- Name: SCHEMA public; Type: ACL; Schema: -; Owner: #DB_OWNER#
 --
 
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.ban_banknote TO "AppAPI";
-
-
---
--- Name: TABLE bit_item; Type: ACL; Schema: public; Owner: postgres
---
-
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.bit_item TO "AppAPI";
+REVOKE ALL ON SCHEMA public FROM rdsadmin;
+REVOKE ALL ON SCHEMA public FROM PUBLIC;
+GRANT ALL ON SCHEMA public TO #DB_OWNER#;
+GRANT ALL ON SCHEMA public TO PUBLIC;
 
 
 --
--- Name: TABLE bta_banknote_tag; Type: ACL; Schema: public; Owner: postgres
+-- Name: TABLE ban_banknote; Type: ACL; Schema: public; Owner: #DB_OWNER#
 --
 
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.bta_banknote_tag TO "AppAPI";
-
-
---
--- Name: TABLE bva_variant; Type: ACL; Schema: public; Owner: postgres
---
-
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.bva_variant TO "AppAPI";
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.ban_banknote TO "BanknotesAPI";
 
 
 --
--- Name: TABLE con_continent; Type: ACL; Schema: public; Owner: postgres
+-- Name: TABLE bit_item; Type: ACL; Schema: public; Owner: #DB_OWNER#
 --
 
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.con_continent TO "AppAPI";
-
-
---
--- Name: TABLE cur_currency; Type: ACL; Schema: public; Owner: postgres
---
-
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.cur_currency TO "AppAPI";
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.bit_item TO "BanknotesAPI";
 
 
 --
--- Name: TABLE cus_currency_unit; Type: ACL; Schema: public; Owner: postgres
+-- Name: TABLE bta_banknote_tag; Type: ACL; Schema: public; Owner: #DB_OWNER#
 --
 
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.cus_currency_unit TO "AppAPI";
-
-
---
--- Name: TABLE gra_grade; Type: ACL; Schema: public; Owner: postgres
---
-
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.gra_grade TO "AppAPI";
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.bta_banknote_tag TO "BanknotesAPI";
 
 
 --
--- Name: TABLE iss_issuer; Type: ACL; Schema: public; Owner: postgres
+-- Name: TABLE bva_variant; Type: ACL; Schema: public; Owner: #DB_OWNER#
 --
 
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.iss_issuer TO "AppAPI";
-
-
---
--- Name: TABLE mat_material; Type: ACL; Schema: public; Owner: postgres
---
-
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.mat_material TO "AppAPI";
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.bva_variant TO "BanknotesAPI";
 
 
 --
--- Name: TABLE pri_printer; Type: ACL; Schema: public; Owner: postgres
+-- Name: TABLE con_continent; Type: ACL; Schema: public; Owner: #DB_OWNER#
 --
 
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.pri_printer TO "AppAPI";
-
-
---
--- Name: TABLE ser_series; Type: ACL; Schema: public; Owner: postgres
---
-
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.ser_series TO "AppAPI";
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.con_continent TO "BanknotesAPI";
 
 
 --
--- Name: TABLE tec_territory_currency; Type: ACL; Schema: public; Owner: postgres
+-- Name: TABLE cur_currency; Type: ACL; Schema: public; Owner: #DB_OWNER#
 --
 
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.tec_territory_currency TO "AppAPI";
-
-
---
--- Name: TABLE ter_territory; Type: ACL; Schema: public; Owner: postgres
---
-
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.ter_territory TO "AppAPI";
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.cur_currency TO "BanknotesAPI";
 
 
 --
--- Name: TABLE tty_territory_type; Type: ACL; Schema: public; Owner: postgres
+-- Name: TABLE cus_currency_unit; Type: ACL; Schema: public; Owner: #DB_OWNER#
 --
 
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.tty_territory_type TO "AppAPI";
-
-
---
--- Name: TABLE usr_user; Type: ACL; Schema: public; Owner: postgres
---
-
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.usr_user TO "AppAPI";
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.cus_currency_unit TO "BanknotesAPI";
 
 
 --
--- PostgreSQL database dump complete
+-- Name: TABLE gra_grade; Type: ACL; Schema: public; Owner: #DB_OWNER#
 --
+
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.gra_grade TO "BanknotesAPI";
+
+
+--
+-- Name: TABLE iss_issuer; Type: ACL; Schema: public; Owner: #DB_OWNER#
+--
+
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.iss_issuer TO "BanknotesAPI";
+
+
+--
+-- Name: TABLE mat_material; Type: ACL; Schema: public; Owner: #DB_OWNER#
+--
+
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.mat_material TO "BanknotesAPI";
+
+
+--
+-- Name: TABLE pri_printer; Type: ACL; Schema: public; Owner: #DB_OWNER#
+--
+
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.pri_printer TO "BanknotesAPI";
+
+
+--
+-- Name: TABLE ser_series; Type: ACL; Schema: public; Owner: #DB_OWNER#
+--
+
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.ser_series TO "BanknotesAPI";
+
+
+--
+-- Name: TABLE tec_territory_currency; Type: ACL; Schema: public; Owner: #DB_OWNER#
+--
+
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.tec_territory_currency TO "BanknotesAPI";
+
+
+--
+-- Name: TABLE ter_territory; Type: ACL; Schema: public; Owner: #DB_OWNER#
+--
+
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.ter_territory TO "BanknotesAPI";
+
+
+--
+-- Name: TABLE tty_territory_type; Type: ACL; Schema: public; Owner: #DB_OWNER#
+--
+
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.tty_territory_type TO "BanknotesAPI";
+
+
+--
+-- Name: TABLE usr_user; Type: ACL; Schema: public; Owner: #DB_OWNER#
+--
+
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.usr_user TO "BanknotesAPI";
+
 
