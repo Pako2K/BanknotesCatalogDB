@@ -5720,13 +5720,12 @@ INSERT INTO public.bit_item VALUES (610, 4, 3714, 1, 'UNC', 1.5, 'd.monev4', '20
 INSERT INTO public.bit_item VALUES (612, 4, 3745, 1, 'UNC', 0.5, 'ebay', '2012-06-04', NULL);
 INSERT INTO public.bit_item VALUES (541, 4, 2643, 1, 'UNC', 2.6, 'Bank (BCP)', NULL, NULL);
 INSERT INTO public.bit_item VALUES (544, 4, 2643, 2, 'UNC', 2.67, 'Bank (BCP)', NULL, NULL);
-INSERT INTO public.bit_item VALUES (543, 4, 2647, 1, 'UNC', 25.97, 'Bank (BCP)', NULL, NULL);
-INSERT INTO public.bit_item VALUES (545, 4, 2647, 1, 'UNC', 26.67, 'Bank (BCP)', NULL, NULL);
 INSERT INTO public.bit_item VALUES (546, 4, 2869, 1, 'UNC', 2.99, 'banknoten.de', '2014-01-06', NULL);
 INSERT INTO public.bit_item VALUES (547, 4, 2960, 1, 'UNC', 2.5, 'Plaza Mayor', '2017-03-05', NULL);
 INSERT INTO public.bit_item VALUES (548, 4, 2919, 1, 'UNC', 4, 'ruda-sulowska', '2017-06-11', NULL);
 INSERT INTO public.bit_item VALUES (549, 4, 2899, 1, 'UNC', 2.9, 'w-locke', '2017-07-09', NULL);
 INSERT INTO public.bit_item VALUES (536, 4, 2640, 1, 'UNC', 13.33, 'Bank (BCP)', NULL, NULL);
+INSERT INTO public.bit_item VALUES (543, 4, 2647, 1, 'UNC', 25.97, 'Bank (BCP)', NULL, NULL);
 INSERT INTO public.bit_item VALUES (540, 4, 2638, 1, 'UNC', 51.95, 'Bank (BCP)', NULL, 'Y series');
 INSERT INTO public.bit_item VALUES (550, 4, 2901, 1, 'UNC', 8.2, 'MA-Shop Michael Abram', '2019-08-27', NULL);
 INSERT INTO public.bit_item VALUES (551, 4, 2930, 1, 'UNC', 7.2, 'MA-Shop Michael Abram', '2019-08-27', NULL);
@@ -6342,6 +6341,15 @@ INSERT INTO public.bit_item VALUES (1182, 4, 2638, 1, 'UNC', 44, 'Bank (BCP)', '
 INSERT INTO public.bit_item VALUES (1181, 4, 12215, 2, 'UNC', 22, 'Bank (BCP)', '2021-09-07', NULL);
 INSERT INTO public.bit_item VALUES (1184, 4, 20, 1, 'VF', 500, 'Bank', '2021-11-04', 'Prefix N');
 INSERT INTO public.bit_item VALUES (1178, 4, 12214, 2, 'UNC', 2.2, 'Bank (BCP)', '2021-09-07', NULL);
+INSERT INTO public.bit_item VALUES (1185, 4, 10398, 1, 'UNC', 22, 'banknoten.de', '2021-12-05', NULL);
+INSERT INTO public.bit_item VALUES (1186, 4, 982, 1, 'UNC', 11, 'banknoten.de', '2021-12-05', NULL);
+INSERT INTO public.bit_item VALUES (1187, 4, 4958, 1, 'UNC', 2.1, 'banknoten.de', '2021-12-05', NULL);
+INSERT INTO public.bit_item VALUES (1188, 4, 3649, 1, 'UNC', 6.6, 'banknoten.de', '2021-12-05', NULL);
+INSERT INTO public.bit_item VALUES (1189, 4, 9196, 1, 'UNC', 11, 'banknoten.de', '2021-12-05', NULL);
+INSERT INTO public.bit_item VALUES (1190, 4, 9193, 1, 'XF', 0, 'banknoten.de', '2021-12-05', NULL);
+INSERT INTO public.bit_item VALUES (1191, 4, 3973, 1, 'UNC', 1, 'banknoten.de', '2021-12-05', NULL);
+INSERT INTO public.bit_item VALUES (1192, 4, 3974, 1, 'UNC', 1.2, 'banknoten.de', '2021-12-05', NULL);
+INSERT INTO public.bit_item VALUES (1193, 4, 3976, 1, 'UNC', 2.1, 'banknoten.de', '2021-12-05', NULL);
 
 
 --
@@ -22742,7 +22750,7 @@ SELECT pg_catalog.setval('public.ban_banknote_ban_id_seq', 5311, true);
 -- Name: bit_item_bit_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.bit_item_bit_id_seq', 1184, true);
+SELECT pg_catalog.setval('public.bit_item_bit_id_seq', 1193, true);
 
 
 --
@@ -22834,6 +22842,4 @@ SELECT pg_catalog.setval('public.tty_territory_type_tty_id_seq', 5, false);
 --
 
 SELECT pg_catalog.setval('public.usr_user_usr_id_seq', 27, true);
-
-
 
